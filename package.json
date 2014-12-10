@@ -1,0 +1,37 @@
+{
+  "name": "npm-whoshiring",
+  "version": "0.0.0",
+  "description": "npm Who's hiring? (Jobs listed on npm.com) ",
+  "license": "MIT",
+  "repository": "hemanth/node-nmp-whoshiring",
+  "author": {
+    "name": "Hemanth.HM",
+    "email": "hemanth.hm@gmail.com",
+    "url": "http://h3manth.com"
+  },
+  "bin": {
+    "npm-whoshiring": "./cli.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "npm",
+    "jobs",
+    "cli",
+    "hiring"
+  ],
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "dependencies": {
+    "json-table": "^0.1.3",
+    "request": "^2.50.0"
+  }
+}
