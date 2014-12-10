@@ -1,4 +1,4 @@
-# node-npm-whoshiring [![Build Status](https://travis-ci.org/hemanth/node-npm-whoshiring.svg?branch=master)](https://travis-ci.org/hemanth/node-npm-whoshiring)
+# npm-whoshiring [![Build Status](https://travis-ci.org/hemanth/node-npm-whoshiring.svg?branch=master)](https://travis-ci.org/hemanth/node-npm-whoshiring)
 
 > Shows a table of currently open jobs listed in npm.com.
 
