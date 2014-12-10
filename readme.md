@@ -26,7 +26,7 @@ $ npm install --global npm-whoshiring
 
 __GIF FTW:__
 
-![](./hiring.gif)
+![](https://raw.githubusercontent.com/hemanth/node-npm-whoshiring/master/hiring.gif)
 
 ## License
 
