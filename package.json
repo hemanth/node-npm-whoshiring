@@ -10,7 +10,7 @@
     "url": "http://h3manth.com"
   },
   "bin": {
-    "npm-whoshiring": "./cli.js"
+    "npm-whoshiring": "cli.js"
   },
   "engines": {
     "node": ">=0.10.0"
