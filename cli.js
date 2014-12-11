@@ -8,7 +8,7 @@ whosHiring(function(err, jobs) {
 	if (!err) {
 		jobs.map(function(job) {
 			toShow.push({
-				Compnay: job.name,
+				Company: job.name,
 				URL: job.url,
 				Hiring: job.hiring
 			});
