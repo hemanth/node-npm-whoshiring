@@ -1,39 +1,26 @@
 #!/usr/bin/env node
 'use strict';
 var whosHiring = require("./index"),
-	json_tb = require('json-table'),
-	toShow = [];
+	toShow,
+	Table = require('easy-table')
 
 whosHiring(function(err, jobs) {
 	if (!err) {
-		jobs.map(function(job) {
-			toShow.push({
-				Company: job.name,
-				URL: job.url,
-				Hiring: job.hiring
-			});
+		toShow = jobs.map(function(job) {
+			return {
+				company: job.name,
+				url: job.url,
+				isHiring: job.hiring ? 'YES' : 'NO'
+			};
 		});
-		var json_tb_out = new json_tb(toShow, {
-			chars: {
-				'top': '═',
-				'top-mid': '╤',
-				'top-left': '╔',
-				'top-right': '╗',
-				'bottom': '═',
-				'bottom-mid': '╧',
-				'bottom-left': '╚',
-				'bottom-right': '╝',
-				'left': '║',
-				'left-mid': '╟',
-				'mid': '─',
-				'mid-mid': '┼',
-				'right': '║',
-				'right-mid': '╢',
-				'middle': '│'
-			}
-		}, function(table) {
-			table.show();
-		});
+		var t = new Table
+		toShow.forEach(function(job) {
+		  t.cell('Company', job.company)
+		  t.cell('URL', job.url)
+		  t.cell('Vacant?',job.isHiring)
+		  t.newRow()
+		})
+		console.log(t.toString())
 	} else {
 		throw new Error(err);
 	}
