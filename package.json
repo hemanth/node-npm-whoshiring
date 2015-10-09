@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "easy-table": "^1.0.0",
-    "request": "^2.50.0"
+    "request": "^2.64.0"
   }
 }
