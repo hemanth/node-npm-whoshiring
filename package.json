@@ -29,7 +29,7 @@
     "hiring"
   ],
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "3.4.0"
   },
   "dependencies": {
     "easy-table": "^1.0.0",
